@@ -46,14 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExOne.Designer.cs">
+      <DependentUpon>ExOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExThree.Designer.cs">
+      <DependentUpon>ExThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandThree.Designer.cs">
+      <DependentUpon>HandThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandTwo.Designer.cs">
+      <DependentUpon>HandTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandOne.Designer.cs">
+      <DependentUpon>HandOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabOne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExOne.resx">
+      <DependentUpon>ExOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExThree.resx">
+      <DependentUpon>ExThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandThree.resx">
+      <DependentUpon>HandThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandTwo.resx">
+      <DependentUpon>HandTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandOne.resx">
+      <DependentUpon>HandOne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +124,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+    <Content Include="TextFile2.txt" />
+    <Content Include="TextFile3.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
